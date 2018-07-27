@@ -28,7 +28,7 @@ import java.nio.file.Paths;
 import java.lang.Object;
 
 public class install {
-
+    static String rutaServer = System.getProperty("user.dir");
     public static JFrame crear(String titulo)
     {
         //Poner look and fell
@@ -44,7 +44,14 @@ public class install {
             e.printStackTrace();
         }
         //Rutas
-        String rutaServer = System.getProperty("user.dir").replace("\\out\\artifacts\\javaFTP_jar", "\\out\\production\\javaFTP\\serverSide");
+
+        if (rutaServer.contains("out"))
+        {
+            rutaServer.replace("\\out\\artifacts\\javaFTP_jar", "\\out\\production\\javaFTP\\serverSide");
+        }else
+        {
+            rutaServer += "\\out\\production\\javaFTP\\serverSide";
+        }
         String rutaJAR = System.getProperty("user.dir") + "\\javaFTP.jar";
         System.out.println(rutaServer + "  " + rutaJAR);
         //Crear Ventana
