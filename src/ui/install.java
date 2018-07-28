@@ -76,7 +76,8 @@ public class install {
         //Descripcion
         JTextArea descripcion = new JTextArea("JNFT(Java NodeJs File Transfer Es un software creado con el proposito" +
                 "\n de practicar tanto Java como Node JS. Este proyecto necesita que Node Js \neste instalado para que pueda correr de manera eficiente. " +
-                "\n \nSi quieres contribuir en este proyecto te dejo el Git donde podras hechar un vistazo a todo");
+                "\n \nSi quieres contribuir en este proyecto te dejo el Git donde podras hechar un vistazo a todo:" +
+                "\n https://github.com/JavaNigga/JNFT");
         descripcion.setEditable(false);
         descripcion.setFont(new Font("", Font.PLAIN, 15));
 
